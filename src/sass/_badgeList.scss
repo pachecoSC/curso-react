@@ -1,0 +1,36 @@
+/*----------------------*\
+|  BadgeList
+\*----------------------*/
+.badgeList{
+  @include caja;
+  &__item {
+    width: 100%;
+    display: flex;
+    &--izquierda {
+      width: 20%;
+    }
+    &--derecha {
+      width: 70%;
+    }
+  }
+  &__avatar {
+    width: 5rem;
+    border-radius: 0.5rem;
+    margin: 8px;
+  }
+  &__titulos {
+    font-size: 18px;
+    margin-bottom: 2px;
+    color: $color-primario;
+    @include titulos($fuente-titulo);
+  }
+  &__subtitulos {
+    font-size: 12px;
+    color: $color-primario;
+    @include titulos($fuente-titulo);
+    &--textos{
+      color: $color-claro;
+      @include titulos($fuente-texto);
+    }
+  }
+}

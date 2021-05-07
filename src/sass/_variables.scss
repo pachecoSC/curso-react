@@ -1,0 +1,38 @@
+//tipografia
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Anton');
+
+//variable
+$fuente-titulo: 'Anton', sans-serif;
+$fuente-texto: 'Lato', sans-serif;
+//colores
+$color-primario: #8841DA;
+$color-secundario:#2f293d;
+$color-claro: #f4f4f7;
+$color-semi-oscuro:#1C3643;
+$color-oscuro: #1b1b25;
+$color-success: #7DCD40;
+$color-error: #CD4040;
+
+//mixin
+@mixin titulos($fuente){
+	@if($fuente ==$fuente-titulo){
+		font-family: $fuente-titulo;
+		text-transform: uppercase;
+	}@else{
+		font-family: $fuente-texto;
+	}
+}
+@mixin caja {
+	margin:10px auto;
+	border-radius: 1rem;
+	height: 6rem;
+	box-shadow: 0px 20px 33px 0px rgba($color-oscuro,0.50);
+	color: $color-primario;
+	background-color: $color-secundario;
+}
+
+//funciones
+@function get-opacity($color,$nivel){
+	@return rgba($color,$nivel);
+}

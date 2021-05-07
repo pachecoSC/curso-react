@@ -1,0 +1,22 @@
+/*----------------------*\
+|  BadgeNew
+\*----------------------*/
+
+.BadgeNew {
+  &__hero {
+    width: 100%;
+    padding: 2rem 0;
+    //al momento de hacer redireccionamiento no es necesario salir al final el estilo se encuentra en la raiz.
+    background: url('./images/stars.svg'), $color-oscuro;
+    background-repeat: repeat;
+    margin-bottom: 1rem;
+    color: $color-claro;
+
+    display: flex;
+    justify-content: center;
+
+    &--image {
+      max-height: 100px;
+    }
+  }
+}

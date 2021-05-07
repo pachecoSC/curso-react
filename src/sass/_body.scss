@@ -1,0 +1,22 @@
+* {
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+	@include titulos($fuente-texto);
+}
+
+h1 {
+	@include titulos($fuente-titulo);
+}
+
+a {
+	.lin-unstyled{
+		color:inherit;
+	}
+	.lin-unstyled:hover{
+		color:inherit;
+		text-decoration: none;
+	}
+}

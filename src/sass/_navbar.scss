@@ -1,0 +1,21 @@
+/*----------------------*\
+|  Navbar
+\*----------------------*/
+
+.Navbar {
+  width: 100%;
+  padding: 0.5rem 0;
+  background-color: $color-semi-oscuro;
+  &__brand {
+    color: $color-claro;
+    display: flex;
+    align-items: center;
+    &:hover {
+      color: $color-claro;
+      text-decoration: none;
+    }
+    &-logo {
+      margin-right: 0.5rem;
+    }
+  }
+}
